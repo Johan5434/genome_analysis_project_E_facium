@@ -1,18 +1,15 @@
-# Ignorera allt som utgångspunkt
 *
 
 # Återaktivera specifika undantag:
 !.gitignore
 !README.md
 
-# Behåll kodmappen och dess skript
 !code/
 !code/**/*.sh
 !code/**/*.py
 !code/**/Makefile
 !code/**/*.md
 
-# Behåll mapparnas struktur (tex. med .gitkeep-filer)
 !*/.gitkeep
 
 # Ignorera vanliga systemfiler
