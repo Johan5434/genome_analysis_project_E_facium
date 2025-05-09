@@ -1,20 +1,15 @@
 *
-
-# Återaktivera specifika undantag:
 !.gitignore
 !README.md
 
 !code/
+!code/**/
+
 !code/**/*.sh
 !code/**/*.py
 !code/**/Makefile
 !code/**/*.md
 
-!*/.gitkeep
-
-# Ignorera vanliga systemfiler
 .DS_Store
 *.swp
-*.swo
 *.tmp
-
