@@ -11,7 +11,6 @@
 
 module load bioinfo-tools MUMmer
 
-# Filvägar (ange explicit FASTA för stabilitet)
 REF=/home/joel5434/genomanalys_project/data/reference_data/GCF_016864255.1_ASM1686425v1_genomic.fna
 QUERY=/home/joel5434/genomanalys_project/analyses/02_genome_assembly/PacBio_canu_assembly_result/e_faecium.contigs.fasta
 

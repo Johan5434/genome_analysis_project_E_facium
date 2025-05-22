@@ -12,10 +12,8 @@
 
 module load bioinfo-tools
 
-# Path to your GFF file
 GFF="/home/joel5434/genomanalys_project/code/09_read_counting/efaecium_pacbio.gff"
 CLEANED_GFF="/home/joel5434/genomanalys_project/code/09_read_counting/efaecium_pacbio_cleaned.gff"
 
-# Clean the GFF file
 grep -P '^\s*#|^\S+\t\S+\t\S+\t\d+\t\d+\t\S+\t[+-.]\t\S+\t\S+' "$GFF" > "$CLEANED_GFF"
 

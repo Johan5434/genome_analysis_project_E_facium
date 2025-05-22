@@ -14,7 +14,6 @@ module load bioinfo-tools
 eval "$(conda shell.bash hook)"
 conda activate prokka-env
 
-# Se till att du kan läsa fasta-filen
 chmod u+r /home/joel5434/genomanalys_project/analyses/02_genome_assembly/PacBio_canu_assembly_result/e_faecium.contigs.fasta
 
 prokka \

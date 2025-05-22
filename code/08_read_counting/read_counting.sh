@@ -13,16 +13,13 @@
 module load bioinfo-tools
 module load htseq/2.0.2
 
-# Paths
 BAMDIR="/home/joel5434/genomanalys_project/analyses/08_rna_mapping/untrimmed"
 GFF="/home/joel5434/genomanalys_project/code/09_read_counting/efaecium_pacbio_cleaned.gff"
 OUTDIR="/home/joel5434/genomanalys_project/code/09_read_counting"
 
-# Create output directories if they don't exist
 mkdir -p "$OUTDIR/BH"
 mkdir -p "$OUTDIR/Serum"
 
-# Process BH samples
 for BAM in $BAMDIR/BH/*_sorted.bam; do
     SAMPLE=$(basename "$BAM" _sorted.bam)
     echo "Counting reads for $SAMPLE (BH)..."
@@ -35,7 +32,6 @@ for BAM in $BAMDIR/BH/*_sorted.bam; do
         "$BAM" "$GFF" > "$OUTDIR/BH/${SAMPLE}_counts.txt"
 done
 
-# Process Serum samples
 for BAM in $BAMDIR/Serum/*_sorted.bam; do
     SAMPLE=$(basename "$BAM" _sorted.bam)
     echo "Counting reads for $SAMPLE (Serum)..."
