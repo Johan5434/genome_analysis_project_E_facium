@@ -9,7 +9,7 @@
 !code/**/*.py
 !code/**/Makefile
 !code/**/*.md
-!code/**/*.R
+!code/**/*.r
 .DS_Store
 *.swp
 *.tmp
